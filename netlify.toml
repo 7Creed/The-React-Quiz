@@ -1,0 +1,6 @@
+[build]
+  command = "npm run build" # Assuming you have a build script
+  functions = "functions"   # If you have serverless functions
+  publish = "public"        # Your build output directory
+  # Add the server start command here
+  postbuild = "npm run server"
